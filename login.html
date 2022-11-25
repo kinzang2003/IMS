@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In Form</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="login" class="form" action="home.html">
+        <h1>LOG IN FORM</h1>
+        <div class="form-field">
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" id="email" autocomplete="on" />
+          <small></small>
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off" />
+          <small></small>
+        </div>
+        <div class="form-btn">
+          <h5><a href="..\forgotPassword\forgotPassword.html">Forgot Password?</a></h5> <br>
+          <input class="btn" type="submit" value="Log In" /> 
+          <h5><a href="..\register\register.html">Not a member yet?  Register now.</a></h5> 
+
+        <!-- <input class="btn" type="submit" value="Log In" /> -->
+      </form>
+    </div>
+    <script src="login.js"></script>
+  
+  </body>
+</html>

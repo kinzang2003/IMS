@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Promotion Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="promotion.css" />
+    <style>
+      select {
+          width: 92.5%;
+          height: 27px;
+          
+      }
+  </style>
+  </head>
+  <body>
+    <div class="container1">
+      <h1>Employee Promotion Form</h1>
+      <form id="promotion" action="" method="get" onsubmit="event.preventDefault() ;" autocomplete="off">
+        <div class="row">
+          <div class="col-1">
+              <label > Date of Hire : </label>
+              
+          </div>
+          <div class="col-2">
+              <input type="date" id="date" name="employeeid" placeholder="Employee ID"><br>
+              <small font-weight="20px"></small>
+          </div>
+      </div>
+          <div class="row">
+              <div class="col-1">
+                  <label >Employee ID : </label>
+                  
+              </div>
+              <div class="col-2">
+                  <input type="text" id="id" name="employeeid" placeholder="Employee ID"><br>
+                  <small font-weight="20px"></small>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-1">
+                  <label for="name"> Employee Name : </label></br><label class="validation-error hide" id="nameValidationError">Name cannot ne Balanak!</label>
+                  
+              </div> 
+              <div class="col-2">
+                  <input type="text" id="name" name="employeename" placeholder="Employee Name"><br>
+                  <small></small>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+                <label >Current Position : </label>
+                
+            </div>
+            <div class="col-2">
+                <input type="text" id="currentPosition" name="currentPosition" placeholder="What is your current job position?"><br>
+                <small ></small>
+            </div>
+        </div>
+          <div class="row">
+              <div class="col-1">
+                  <label for="email">Employee Email : </label>
+                  <small></small>
+              </div>
+              <div class="col-2">
+                  <input type="email" id="email" name="email" placeholder="EMAIL"><br>
+                  <small></small>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+                <label for="number">Phone No : </label>
+                <small></small>
+            </div>
+            <div class="col-2">
+                <input type="tel" id="phone" name="employeePhone" placeholder="17332417">
+                <small></small>
+            </div>
+        </div>
+        
+      <div class="row">
+        <div class="col-1">
+          <label for="address">Address:</label>
+          <small></small>
+        </div>
+        <div class="col-2" >
+          <input type="text" id="address" name="address" placeholder="Village, Gewog, Dzongkhag"/>
+          <small></small>
+          <br><br>
+        </div>
+        
+       <div>
+        <label for="experience">JOB EXPERIENCE:</label>
+       </div>
+        <textarea name="" id="" cols="59" rows="10" placeholder="Enter number of years you served in that job and describe your experience here."></textarea>
+
+    </div>
+    <div class="row">
+      <div >
+        <br>
+        How do you want to receive updates on new promotion?
+      </div>
+      <div class="col-3">
+        <input type="checkbox" name="option1">
+        <label for="option1">Through text message</label>
+      </div>
+      
+      <div class="col-3">
+        <input type="checkbox" name="option3">
+        <label for="option3">Through email</label>
+      </div>
+    </div>
+          <br>
+          <div class="row form-action-buttons" >
+              <input type="submit" value="ADD">
+          </div>
+      </form>
+    </div>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="promotion.js"></script>
+  </body>
+</html>
